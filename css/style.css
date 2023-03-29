@@ -1,0 +1,228 @@
+@import url(reset.css);
+
+html,
+body {
+   height: 100%;
+   background: black;
+}
+* {
+   font-family: "Unbounded", sans-serif;
+}
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.main {
+   flex: 1 1 auto;
+}
+.container {
+   width: 100%;
+   padding: 0 60px;
+}
+/* HEADER */
+.header {
+   margin-top: 80px;
+   height: 126px;
+   width: 100%;
+}
+.header__container {
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.header__link_container {
+   display: flex;
+   gap: 32px;
+}
+.header__link_container > a {
+   font-weight: 400;
+   padding-bottom: 5px;
+   border-bottom: 1px solid #fff;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+.header__list {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+.header__menu_item {
+   text-align: right;
+}
+.header__menu_link {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 16px;
+   line-height: 20px;
+   color: #ffffff;
+}
+
+/* HEADER */
+
+/* FOOTER */
+.footer {
+   background: #fff;
+   height: 430px;
+}
+.footer__container {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.footer__title {
+   margin-top: 108px;
+   color: #000000;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 78px;
+   line-height: 97px;
+   text-align: center;
+   text-transform: uppercase;
+}
+.footer__feedback_container {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin-bottom: 75px;
+}
+.footer__subtitle {
+   font-weight: 800;
+   font-size: 12px;
+   line-height: 15px;
+   color: #000000;
+   text-transform: uppercase;
+   display: flex;
+   align-items: flex-end;
+}
+.footer__social_links_container {
+   display: flex;
+   gap: 30px;
+}
+.footer__social_link {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background: #000000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* FOOTER */
+
+/* ABOUT US */
+
+.about_us__line {
+   height: 37px;
+   background: #777e80;
+}
+.about_us__bg {
+   position: relative;
+   z-index: 10;
+}
+.about_us__content_container {
+   padding-top: 70px;
+   position: relative;
+}
+#about_us {
+   /* padding-top: 70px; */
+   background: #d9d9d9;
+}
+.about_us__title_container {
+   position: absolute;
+   top: 245px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   gap: 100px;
+   overflow: hidden;
+   justify-content: flex-start;
+
+}
+.about_us__title_container > span {
+   font-weight: 800;
+   font-size: 302px;
+   line-height: 374px;
+   text-align: center;
+   text-transform: uppercase;
+   white-space: nowrap;
+   /* animation: marquee 2000ms linear infinite; */
+
+}
+
+@keyframes marquee {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-300%);
+   }
+}
+.about_us__bg {
+   /* width: 1894px; */
+   /* height: 800px; */
+}
+/* ABOUT US */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+      padding: 0px 30px;
+   }
+   /* HEADER  */
+   .header__menu {
+      display: none;
+   }
+   .header__logo {
+      width: 69px;
+      height: 42px;
+   }
+   .header__menu_link {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+   }
+   .header__link_container {
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   /* HEADER  */
+   /* FOOTER */
+   .footer {
+      height: 470px;
+   }
+   .footer__title {
+      margin-top: 85px;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 60px;
+   }
+   .footer__feedback_container {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   .footer__subtitle {
+      margin-top: 50px;
+      text-align: center;
+   }
+
+   /* FOOTER */
+}
+@media screen and (max-width: 576px) {
+}
