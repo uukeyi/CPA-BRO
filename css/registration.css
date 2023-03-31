@@ -1,0 +1,255 @@
+@import url(reset.css);
+html,
+body {
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: black;
+}
+.registration_container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+.registration__left_text,
+.registration__right_text {
+   font-family: "Unbounded";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 45px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #ffffff;
+   position: relative;
+}
+.registration__right_text {
+   transform: rotate(90deg);
+   top: 120px;
+   left: -70px;
+   align-self: flex-start;
+}
+.registration__left_text {
+   transform: rotate(-90deg);
+   align-self: flex-end;
+   bottom: 120px;
+   right: -70px;
+}
+.advertister__left_text {
+   bottom: 192px;
+   right: -140px;
+}
+.advertister__right_text {
+   top: 192px;
+   left: -140px;
+}
+.registration_block {
+   padding: 30px 76px 50px 76px;
+   background: #2f408e;
+   border-radius: 10px;
+   color: #ffffff;
+}
+.registartion_label_input {
+   margin-top: 8px;
+   font-family: "Unbounded";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 15px;
+   color: #ffffff;
+}
+.registration_input {
+   font-family: "Unbounded";
+   padding: 0 5px;
+   width: 350px;
+   height: 46px;
+   border: 1.5px solid #ffffff;
+   margin-top: 8px;
+}
+.registration_flex_container {
+   display: flex;
+   gap: 15px;
+}
+
+.registration_flex_block > input {
+   width: 165px;
+}
+.telegram_input {
+   width: 165px;
+}
+.textarea_input {
+   padding: 10px;
+   outline: none;
+   height: 74px;
+   line-height: 1.6;
+   resize: none;
+}
+.registration_flex_input_container {
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.container {
+   display: block;
+   position: relative;
+   padding-left: 25px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   font-family: "Unbounded";
+   font-style: normal;
+   font-weight: 300;
+   font-size: 10px;
+   line-height: 12px;
+   color: #ffffff;
+}
+
+.container input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+}
+
+.checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 15px;
+   width: 15px;
+   background-color: #d9d9d9;
+   border-radius: 5px;
+}
+
+.container:hover input ~ .checkmark {
+   background-color: #d9d9d9;
+}
+
+.container input:checked ~ .checkmark {
+   background-color: #2196f3;
+}
+
+.checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+   display: block;
+}
+
+.container .checkmark:after {
+   left: 5.2px;
+   top: 1px;
+   width: 5px;
+   height: 10px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+.registration_main_btn {
+   display: block;
+   margin: 15px auto;
+   width: 348px;
+   height: 47px;
+   font-family: "Unbounded";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   color: #000000;
+   background: #dfe1e0;
+}
+.goBack_btn {
+   font-family: "Unbounded";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   text-align: right;
+   text-transform: uppercase;
+   color: #ffffff;
+   margin-top: 30px;
+   padding-bottom: 5px;
+   border-bottom: 1px solid #ffffff;
+}
+@media screen and (max-width: 768px) {
+    .registration__right_text ,
+    .registration__left_text {
+        font-size: 28px;
+    }
+    .webmaster_container {
+        margin-top: 40px;
+    }
+    .webmaster_left_text  {
+        bottom: 10px !important;
+    }
+    .webmaster_right_text {
+        top: 10px !important;
+    }
+   .registration_container {
+      flex-direction: column;
+   }
+   .registration__right_text {
+      transform: rotate(0deg);
+      top: 25px;
+      left: 0px;
+      align-self: center;
+   }
+   .registration__left_text {
+      transform: rotate(0deg);
+      align-self: center;
+      bottom: 25px;
+      right: 0px;
+   }
+   .goBack_btn {
+      margin-top: 80px;
+   }
+
+   .webmaster_goBack_btn {
+    margin-top: 40px;
+   }
+}
+@media screen and (max-width: 576px) {
+   .registration_block {
+      width: 100%;
+      padding: 30px 40px;
+      border-radius: 0px;
+   }
+   .registration_input {
+      width: 100%;
+   }
+   .registration_flex_block > input {
+      width: 100%;
+   }
+   .registration_main_btn {
+      width: 100%;
+   }
+   .advertister__right_text,
+   .advertister__left_text {
+      font-size: 28px;
+   }
+
+}
+@media screen and (max-width: 350px) {
+   .advertister__right_text,
+   .advertister__left_text {
+      font-size: 24px;
+   }
+}
