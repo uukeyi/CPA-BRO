@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>CPA Bro</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -11,36 +11,28 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" id="header-section">
         <div class="header__container container">
           <a href="/"><img class="header__logo" src="./assets/icons/logo.svg" alt="" /></a>
-
-          <div class="header__link_container">
-            <a href=""> Sign in </a>
-            <a href=""> log in </a>
-          </div>
+          <div class="header__link_container"><a href="">Sign in </a><a href="">log in</a></div>
           <nav class="header__menu">
             <ul class="header__list">
               <li class="header__menu_item">
-                <a href="" class="header__menu_link">About</a>
+                <a href="#about-us" class="header__menu_link">About</a>
               </li>
               <li class="header__menu_item">
-                <a href="" class="header__menu_link">Offers</a>
+                <a href="#offers" class="header__menu_link">Offers</a>
               </li>
+              <li class="header__menu_item"><a href="#faq" class="header__menu_link">FAQ</a></li>
               <li class="header__menu_item">
-                <a href="" class="header__menu_link">FAQ</a>
-              </li>
-              <li class="header__menu_item">
-                <a href="" class="header__menu_link">Contact</a>
+                <a href="#footer" class="header__menu_link">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-
       <main class="main">
         <section id="hero">
           <div class="hero__wrapper">
@@ -48,8 +40,13 @@
               <img src="./assets/img/broHero.png" alt="broAnimation" class="hero__img" />
               <div class="hero__text-wrapper">
                 <div class="hero__title-wrapper">
-                  <p class="hero__title">CPA</p>
-                  <p class="hero__title">BRO</p>
+                  <p class="hero__title-mobile">
+                    TURN OUR<br />
+                    EXPERTISE<br />
+                    INTO YOUR <br />PROFIT
+                  </p>
+                  <p class="hero__title-pc">CPA</p>
+                  <p class="hero__title-pc">BRO</p>
                 </div>
                 <p class="hero__subtitle">
                   Turn our expertise<br />
@@ -59,7 +56,24 @@
             </div>
             <button class="hero__button">RU EN</button>
           </div>
+          <div class="button-lang-wrapper">
+            <button class="button-mobile-inner">
+              <span class="ru">RU</span> | <span class="en"></span>EN
+            </button>
+            <button class="button-globus button-mobile">
+              <img id="img-globus" src="./assets/icons/globus.svg" alt="globus" />
+            </button>
+          </div>
+          <a class="button-arrow button-mobile" href="#header-section"
+            ><img src="./assets/icons/arrowup.svg" alt="arrow"
+          /></a>
         </section>
+        <div class="mobile-navbar">
+          <a href="#about-us">About</a>
+          <a href="#offers">Offers</a>
+          <a href="#faq">FAQ</a>
+          <a href="#footer">Contact</a>
+        </div>
         <section id="about-us">
           <div class="about-us__wrapper">
             <div class="about-us__left">
@@ -67,10 +81,7 @@
                 <p class="about-us__text about-us__about-us">О НАС</p>
                 <div class="about-us__info-wrapper">
                   <p class="about-us__left-title">5 ЛЕТ</p>
-                  <p class="about-us__left-text">
-                    На рынке CPA <br />
-                    и IGAMING
-                  </p>
+                  <p class="about-us__left-text">На рынке CPA<br />и IGAMING</p>
                 </div>
                 <button class="about-us__left-top-button">
                   <img src="./assets/icons/about-us__arrow.svg" alt="arrow" class="about-us__img" />
@@ -87,15 +98,9 @@
             <div class="about-us__right">
               <div class="about-us__right-top">
                 <div class="about-us__right-left">
-                  <div class="about-us__item">
-                    <p>Больше 4 WW in-house команд</p>
-                  </div>
-                  <div class="about-us__item">
-                    <p>Свое закрытое комьюнити FULL HOUSE</p>
-                  </div>
-                  <div class="about-us__item">
-                    <p>Серия Online meet-up Aff2Traff</p>
-                  </div>
+                  <div class="about-us__item"><p>Больше 4 WW in-house команд</p></div>
+                  <div class="about-us__item"><p>Свое закрытое комьюнити FULL HOUSE</p></div>
+                  <div class="about-us__item"><p>Серия Online meet-up Aff2Traff</p></div>
                   <div class="about-us__item">
                     <p>3 sport-book & casino продукта по лицензиям Curacao и MGA, Estonian</p>
                   </div>
@@ -107,7 +112,6 @@
                   <div class="about-us__item about-us__item_big about-us__item_trans">
                     <p>Собственный образовательный ресурс PRESS AFF</p>
                   </div>
-
                   <div class="about-us__item about-us__item_orange about-us__item_big">
                     <p>Собственное платежное решение ChocoPay для платформ FB, Google, TikTok</p>
                   </div>
@@ -130,46 +134,232 @@
             </div>
           </div>
         </section>
-        <section id="about_us">
-          <div class="about_us__line"></div>
-          <div class="about_us__content_container">
-            <!-- <div class="about_us__title_container" > -->
-            <!-- <marquee scrollamount = "20" behavior="scroll" direction="left"> -->
-            <div class="about_us__title_container">
-              <span>BRO</span>
-              <span>BRO</span>
-              <span>BRO</span>
-              <span>BRO</span>
-              <span>BRO</span>
-              <span>BRO</span>
-
-              <span>BRO</span>
-
-              <span>BRO</span>
+        <section id="marquee_section">
+          <div class="marquee__line"></div>
+          <div class="marquee__content_container">
+            <div class="marquee__flex_container_mobile">
+              <div class="marquee__title_container">
+                <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span>
+                <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span>
+              </div>
+              <img
+                class="marquee__bg marquee__bg_phone"
+                src="./assets/marquee-section-img/marquee-phone-bg.png"
+                alt="#"
+              />
             </div>
-            <!-- </marquee> -->
-            <!-- <marquee behavior="scroll" direction="left">BRO</marquee> -->
-            <!-- <marquee behavior="scroll" direction="left">BRO</marquee> -->
-            <!-- </div> -->
-
-            <img class="about_us__bg" src="./assets//about-us-img/about-us-bg.png" alt="" />
-            <div class="container"></div>
+            <img
+              class="marquee__bg marquee__bg_desc"
+              src="./assets/marquee-section-img/marquee-bg-laptop.png"
+              alt="#"
+            />
+            <div class="marquee__subtitle_container">
+              <p class="marquee__subtitle">
+                CPA BRO — an international affiliate network with<br />
+                5+ years of expertise in iGaming. We provide the<br />
+                best deals in fact.
+              </p>
+              <a href="" class="marquee__subtitle_link">JOIN US</a>
+            </div>
+          </div>
+        </section>
+        <section id="offers">
+          <div class="offers__container container">
+            <div class="offers__title_container">
+              <p class="offers__title">offers</p>
+              <img
+                class="offers__cursor_img cursor"
+                src="./assets/offers-section-img/cursor-icon.svg"
+                alt="#"
+              />
+            </div>
+            <div class="offers__card_container">
+              <div class="offers__card">
+                <div class="offers__img offers__img--leon">
+                  <div class="offers_card__black-bg"></div>
+                  <span>LEON</span> <img src="./assets/icons/leon-icon.svg" alt="LEON" />
+                </div>
+                <p class="offers__description">
+                  ГЕО — Португалия<br />источник — FB APPS<br />ставка — от 60 USD<br />мин.деп — 10
+                  EUR
+                </p>
+              </div>
+              <div class="offers__card">
+                <div class="offers__img offers__img--tedbet">
+                  <div class="offers_card__black-bg"></div>
+                  <span>TEDBET</span> <img src="./assets/icons/tedbet-icon.svg" alt="#" />
+                </div>
+                <p class="offers__description">
+                  ГЕО — Южная Корея<br />источник — FB APPS<br />ставка — от 160 USD<br />мин.деп —
+                  5 USD
+                </p>
+              </div>
+              <div class="offers__card">
+                <div class="offers__img offers__img--1win">
+                  <div class="offers_card__black-bg"></div>
+                  <span>1WIN </span><img src="./assets/icons/1win_logo_border.svg" alt="#" />
+                </div>
+                <p class="offers__description">
+                  ГЕО — Бразилия<br />источник — FB APP<br />ставка — от 20 USD<br />мин.деп —30 BRL
+                </p>
+              </div>
+              <div class="offers__card">
+                <div class="offers__img offers__img--brazino">
+                  <div class="offers_card__black-bg"></div>
+                  <span>BRAZINO </span><img src="./assets/icons/brazino777-logo.svg" alt="#" />
+                </div>
+                <p class="offers__description">
+                  ГЕО — Австралия<br />источник — PPC<br />ставка — от 40 USD<br />мин.деп —30 BRL
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="faq">
+          <div class="container">
+            <hr class="faq__header_line" />
+            <div class="faq__title_container">
+              <p class="faq__abbreviated_title">Faq</p>
+              <p class="faq__full_title">frequently asked question</p>
+            </div>
+            <div class="faq__advertiser_block faq__block">
+              <div class="faq__img_block">
+                <img src="./assets/faq-section-img/faq-advertiser.png" alt="#" />
+                <p class="faq__img_subtitle">Advertiser</p>
+              </div>
+              <hr class="faq__mobile_line" />
+              <div class="faq__text_block">
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    С какими вертикалями<br />
+                    вы работаете?
+                  </p>
+                  <p class="faq__block_description">
+                    CPA BRO узконаправленная партнерская сеть, мы работаем<br />
+                    исключительно с Gambling и Betting вертикалью.
+                  </p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">C какими гео вы работаете?</p>
+                  <p class="faq__block_description">
+                    Мы работаем со всеми странами<br />
+                    от Tier-1 до Tier-3.
+                  </p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Какие источники трафика<br />
+                    являются для вас<br />
+                    приоритетными?
+                  </p>
+                  <p class="faq__block_description">
+                    Мы фокусируемся на HQ источниках, таких как<br />
+                    SEO, PPC, ASO, ASA, Facebook и In-App.
+                  </p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    C какими моделями оплаты<br />
+                    трафика вы работаете?
+                  </p>
+                  <p class="faq__block_description">CPA, RevShare и Hybrid.</p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">У вас есть In-House команды?</p>
+                  <p class="faq__block_description">
+                    Да, конечно. Одно из наших преимуществ — <br />это внутренние медиабаинг команды
+                    под различные,<br />
+                    приоритетные для нас и рекламодателей направления.
+                  </p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Как можно начать<br />
+                    сотрудничать с вами?
+                  </p>
+                  <p class="faq__block_description">
+                    Все просто : заполните форму представленную<br />
+                    на сайте (ссылка) , после чего с вами свяжется наш саппорт,<br />
+                    чтобы обсудить дальнейшие этапы сотрудничества
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq__webmaster_block faq__block">
+              <div class="faq__img_block">
+                <img src="./assets/faq-section-img/faq-webmaster.png" alt="#" />
+                <p class="faq__img_subtitle">Webmaster</p>
+              </div>
+              <hr class="faq__mobile_line" />
+              <div class="faq__text_block">
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    У меня нет опыта в gambling<br />
+                    вертикали, могу ли я с вами<br />
+                    поработать?
+                  </p>
+                  <p class="faq__block_description">
+                    Будучи приватной партнерской сетью, мы<br />
+                    концентрируемся на работе с уже опытными<br />
+                    вебмастерами. Однако, если у вас богатый опыт в<br />
+                    других вертикалях и есть все необходимые ресурсы<br />
+                    для запуска, мы без проблем подберем вам оффер<br />
+                    и сориентируем по подходам.
+                  </p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Мой аккаунт не верифицируют,<br />
+                    что делать?
+                  </p>
+                  <p class="faq__block_description">
+                    Возможно вы не предоставили информацию о<br />
+                    вашем опыте, источниках или не прикрепили<br />
+                    статистику. Просим предоставить полную<br />
+                    информацию, это сократит время верификации.
+                  </p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Как мне получить доступ<br />
+                    к офферам?
+                  </p>
+                  <p class="faq__block_description">
+                    Самые «вкусные» продукты находятся в приватном<br />
+                    доступе. После того, как саппорт или личный<br />
+                    менеджер определит интересующее вас ГЕО, вам<br />
+                    распишут все условия, откроют офферы и выдадут<br />
+                    ссылки для залива!
+                  </p>
+                </div>
+                <div class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Как мне начать работать<br />
+                    с вами?
+                  </p>
+                  <p class="faq__block_description">
+                    Все просто: нужно зарегистрироваться в<br />
+                    партнерской сети и дождаться ответа от<br />
+                    @cpabrosupport. И, кстати, у нас самый быстрый<br />
+                    саппорт на рынке!
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="footer__container container">
           <p class="footer__title">contact.</p>
           <div class="footer__feedback_container">
             <p class="footer__subtitle">© CPAbro, 2023 All rights reserved</p>
             <div class="footer__social_links_container">
               <a href="" class="footer__social_link"
-                ><img src="./assets/icons/instagram.svg" alt=""
-              /></a>
-              <a href="" class="footer__social_link"
-                ><img src="./assets/icons/youtube.svg" alt=""
-              /></a>
-              <a href="" class="footer__social_link"
+                ><img src="./assets/icons/instagram.svg" alt="" /></a
+              ><a href="" class="footer__social_link"
+                ><img src="./assets/icons/youtube.svg" alt="" /></a
+              ><a href="" class="footer__social_link"
                 ><img src="./assets/icons/telegram.svg" alt=""
               /></a>
             </div>
