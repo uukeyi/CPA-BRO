@@ -1,15 +1,26 @@
 @import url(reset.css);
-html,
-body {
-   height: 100%;
-}
-.wrapper {
-   min-height: 100%;
+
+.wrapper-form-adv,
+.wrapper-form-web {
+   min-height: 100vh;
+   width: 100%;
    display: flex;
+   position: fixed;
+   top: 0;
+   opacity: 0;
+   left: 0;
    flex-direction: column;
    justify-content: center;
    align-items: center;
    background: black;
+
+   pointer-events: none;
+}
+.wrapper-form-adv-active,
+.wrapper-form-web-active {
+   opacity: 1;
+   pointer-events: all;
+   z-index: 100000;
 }
 .registration_container {
    display: flex;
@@ -97,8 +108,9 @@ body {
    gap: 5px;
 }
 
-.container {
+.container-label {
    display: block;
+   padding-top: 1px;
    position: relative;
    padding-left: 25px;
    margin-bottom: 12px;
@@ -115,7 +127,7 @@ body {
    color: #ffffff;
 }
 
-.container input {
+.container-label input {
    position: absolute;
    opacity: 0;
    cursor: pointer;
@@ -133,11 +145,11 @@ body {
    border-radius: 5px;
 }
 
-.container:hover input ~ .checkmark {
+.container-label:hover input ~ .checkmark {
    background-color: #d9d9d9;
 }
 
-.container input:checked ~ .checkmark {
+.container-label input:checked ~ .checkmark {
    background-color: #2196f3;
 }
 
@@ -147,11 +159,11 @@ body {
    display: none;
 }
 
-.container input:checked ~ .checkmark:after {
+.container-label input:checked ~ .checkmark:after {
    display: block;
 }
 
-.container .checkmark:after {
+.container-label .checkmark:after {
    left: 5.2px;
    top: 1px;
    width: 5px;
@@ -176,7 +188,7 @@ body {
    color: #000000;
    background: #dfe1e0;
 }
-.goBack_btn {
+.goBack_btn_form {
    font-family: "Unbounded";
    font-style: normal;
    font-weight: 400;
@@ -190,40 +202,34 @@ body {
    border-bottom: 1px solid #ffffff;
 }
 @media screen and (max-width: 768px) {
-    .registration__right_text ,
-    .registration__left_text {
-        font-size: 28px;
-    }
-    .webmaster_container {
-        margin-top: 40px;
-    }
-    .webmaster_left_text  {
-        bottom: 10px !important;
-    }
-    .webmaster_right_text {
-        top: 10px !important;
-    }
+   .registration__right_text,
+   .registration__left_text {
+      font-size: 28px;
+   }
+   .webmaster_container {
+      margin-top: 40px;
+   }
+   .webmaster_left_text {
+      bottom: 10px !important;
+   }
+   .webmaster_right_text {
+      top: 10px !important;
+   }
    .registration_container {
       flex-direction: column;
    }
    .registration__right_text {
-      transform: rotate(0deg);
-      top: 25px;
-      left: 0px;
-      align-self: center;
+      display: none;
    }
    .registration__left_text {
-      transform: rotate(0deg);
-      align-self: center;
-      bottom: 25px;
-      right: 0px;
+      display: none;
    }
    .goBack_btn {
       margin-top: 80px;
    }
 
    .webmaster_goBack_btn {
-    margin-top: 40px;
+      margin-top: 40px;
    }
 }
 @media screen and (max-width: 576px) {
@@ -241,15 +247,8 @@ body {
    .registration_main_btn {
       width: 100%;
    }
-   .advertister__right_text,
-   .advertister__left_text {
-      font-size: 28px;
-   }
-
-}
-@media screen and (max-width: 350px) {
-   .advertister__right_text,
-   .advertister__left_text {
-      font-size: 24px;
+   .wrapper-form-adv,
+   .wrapper-form-web {
+      justify-content: flex-start;
    }
 }
