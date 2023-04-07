@@ -31,6 +31,7 @@ const swiper = new Swiper('.mySwiper', {
     },
   },
 });
+
 const desktopRuBtn = document.querySelector('.ru-btn');
 const desktopEnBtn = document.querySelector('.english-btn');
 const arrowBtn = document.querySelector('.button-arrow');
@@ -71,6 +72,9 @@ const howToWorkWithUsBlock = document.querySelector('#howToWorkWithUs');
 const leonOffer = document.querySelector('#leon-offer');
 const tedbetOffer = document.querySelector('#tedbet-offer');
 const oneWinOffer = document.querySelector('#onewin-offer');
+const arlekinOffer = document.querySelector('#arlekin-offer');
+const kakaduOffer = document.querySelector('#kakadu-offer');
+const aboOffer = document.querySelector('#abo-offer');
 const brazinoOffer = document.querySelector('#brazino-offer');
 const linkToAdvForm = document.querySelector('.advertiser_reg__btn');
 const wrapperFormAdv = document.querySelector('.wrapper-form-adv');
@@ -195,6 +199,15 @@ const changeLanguage = (prefix, e) => {
   Array.from(brazinoOffer.children).forEach((el, index) => {
     el.textContent = offers[brazinoOffer.dataset.id][index];
   });
+  Array.from(arlekinOffer.children).forEach((el, index) => {
+    el.textContent = offers[arlekinOffer.dataset.id][index];
+  });
+  Array.from(kakaduOffer.children).forEach((el, index) => {
+    el.textContent = offers[kakaduOffer.dataset.id][index];
+  });
+  Array.from(aboOffer.children).forEach((el, index) => {
+    el.textContent = offers[aboOffer.dataset.id][index];
+  });
   const faqLinkReg = document.querySelector('.faq_reg_link');
   const anchors = document.querySelectorAll('.anchor');
   for (let t of anchors)
@@ -258,26 +271,36 @@ goBackLogin.addEventListener('click', (e) => {
   goBackLogin.classList.remove('goBack_login_btn_active');
   loginContainer.classList.remove('login_container_active');
 });
-
 let part,
   i = 0,
   offset = 0;
 const len = words.length;
 let forwards = !0,
   skip_count = 0;
-const skip_delay = 15,
-  speed = 200,
-  wordflick = function () {
-    setInterval(function () {
-      forwards
-        ? offset >= words[i].length &&
-          (++skip_count, 15 == skip_count && ((forwards = !1), (skip_count = 0)))
-        : 0 == offset && ((forwards = !0), i++, (offset = 0), i >= len && (i = 0)),
-        (part = words[i].substr(0, offset)),
-        0 == skip_count && (forwards ? offset++ : offset--),
-        (document.querySelector('.about-us__left-title').textContent = `${part}`);
-    }, 200);
-  };
+let stick = 'I';
+if (localStorage.getItem('lang') == 'en') {
+  console.log(1);
+}
+window.addEventListener('DOMContentLoaded', function () {
+  setInterval(function () {
+    forwards
+      ? offset >= words[i].length &&
+        (++skip_count, 15 == skip_count && ((forwards = !1), (skip_count = 0)))
+      : 0 == offset && ((forwards = !0), i++, (offset = 0), i >= len && (i = 0)),
+      (part = words[i].substr(0, offset)),
+      localStorage.getItem('lang') == 'en'
+        ? offset === 7
+          ? (stick = '')
+          : (stick = 'I')
+        : offset === 5
+        ? (stick = '')
+        : (stick = 'I'),
+      0 == skip_count && (forwards ? offset++ : offset--),
+      (document.querySelector(
+        '.about-us__left-title'
+      ).innerHTML = `<span>${part}<span style="font-weight: 400;">${stick}</span></span>`);
+  }, 200);
+});
 
 window.addEventListener('DOMContentLoaded', function () {
   if (localStorage.getItem('lang') !== null) {
@@ -341,7 +364,6 @@ enBtn.addEventListener('click', (e) => {
   localStorage.setItem('lang', 'en');
   enBtn.style.fontWeight = '700';
   ruBtn.style.fontWeight = '400';
-
   changeLanguage('en', e);
 });
 desktopRuBtn.addEventListener('click', (e) => {

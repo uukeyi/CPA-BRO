@@ -374,7 +374,7 @@ html {
 .animation-video {
   top: 50%;
   pointer-events: none;
-  left: 48%;
+  left: 50%;
   height: 140%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -765,7 +765,7 @@ html {
 .about-us__item_green {
   background-color: #38bb88;
   transform-origin: 0% 0%;
-  margin-top: -35px;
+  margin-top: -30px;
   transform: rotate(10deg);
   animation: 5s ease-in-out infinite shaking;
   z-index: 1000;
@@ -819,6 +819,7 @@ html {
 .about_us__title_container > span {
   font-weight: 800;
 }
+
 .marquee__content_container {
   padding-top: 70px;
   position: relative;
@@ -831,16 +832,24 @@ html {
   width: calc(900% + 100px * 9);
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 0px;
   justify-content: flex-start;
-  animation: 18s linear infinite marquee;
+  animation: 18s linear infinite marqueeDesktop;
 }
 .marquee__title_container > span {
   font-weight: 800;
   float: left;
-  width: 800px;
+  width: 1000px;
 }
-@keyframes marquee {
+/* @keyframes marqueeMobile {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(-78.5% + 20px);
+  }
+} */
+@keyframes marqueeDesktop {
   0% {
     left: 0;
   }
@@ -1020,6 +1029,7 @@ html {
 .offers__img--brazino {
   background: url(../assets/offers-section-img/brazino-bg.png) 0 0 / cover no-repeat;
 }
+
 .offers__description {
   font-size: 20px;
   color: #000;
@@ -1221,6 +1231,14 @@ html {
     width: 362px;
   }
 }
+@media screen and (max-width: 1760px) {
+  .years-title-en {
+    font-size: 110px !important;
+  }
+  #yearsSecondaryTitle {
+    font-size: 50px !important;
+  }
+}
 @media screen and (max-width: 1700px) {
   .offers__img--tedbet > img {
     width: 90%;
@@ -1395,6 +1413,11 @@ html {
     width: 40px;
   }
 }
+@media screen and (max-width: 1310px) {
+  #yearsSecondaryTitle {
+    font-size: 40px !important;
+  }
+}
 @media screen and (max-width: 1200px) {
   .about-us__arrow {
     width: 40px;
@@ -1470,6 +1493,9 @@ html {
 @media screen and (max-width: 992px) {
   .offers__img {
     height: 300px;
+  }
+  #yearsSecondaryTitle {
+    font-size: 30px !important;
   }
   .about-us__arrow {
     width: 35px;
@@ -1609,6 +1635,9 @@ html {
   .marquee__subtitle p > br {
     display: none;
   }
+  .years-title-en {
+    font-size: 50px !important;
+  }
   .marquee__subtitle_ru > br {
     display: none;
   }
@@ -1667,6 +1696,10 @@ html {
   .swiper-pagination {
     display: none !important;
   }
+  #yearsSecondaryTitle {
+    font-size: 25px !important;
+  }
+
   .swiper-wrapper {
     /* display: none !important; */
     display: flex !important;
@@ -1688,7 +1721,7 @@ html {
   }
 
   .years-title-en {
-    font-size: 45px !important;
+    font-size: 37px !important;
   }
   .login_container {
     flex-direction: column;
@@ -1815,6 +1848,10 @@ html {
     color: #ffffff;
     text-align: center;
   }
+  .marquee__title_container > span {
+    width: 700px;
+  }
+
   #hero {
     height: 130vw;
   }
@@ -2089,6 +2126,7 @@ html {
   .about-us__right-right {
     width: 100%;
     flex-direction: column;
+    margin-top: 30px;
   }
   .about-us__item_trans {
     position: absolute;
