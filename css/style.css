@@ -790,7 +790,7 @@ html {
 }
 .about_us__line,
 .marquee__line {
-  height: 37px;
+  height: 25px;
   background: #777e80;
 }
 .about_us__bg,
@@ -1548,7 +1548,7 @@ html {
   .marquee__bg_phone {
     display: block;
     width: 90%;
-    margin: 50px auto 0px auto;
+    margin: 20px auto 0px auto;
     object-position: bottom center;
   }
   .marquee__flex_container_mobile {
@@ -1870,7 +1870,7 @@ html {
     width: 230vw;
   }
   #offers {
-    padding: 28px 0px 90px 0px;
+    padding: 28px 0px 146px 0px;
   }
   .offers__title {
     margin-bottom: -70px;
@@ -2016,13 +2016,13 @@ html {
     display: none;
   }
   .marquee__line {
-    height: 15px;
+    height: 10px;
   }
   .marquee__title_container > span {
     font-size: 120px;
     line-height: 149px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 14px;
   }
   .about-us__right-text,
   .marquee__subtitle {
@@ -2033,11 +2033,11 @@ html {
     margin: 16px 0px 0px 0px;
   }
   .marquee__subtitle_container {
-    margin-top: -5px;
+    margin-top: 0px;
     padding-bottom: 64px;
   }
   .marquee__subtitle_link {
-    margin-top: 19px;
+    margin-top: 14px;
     width: 90%;
   }
   .about-us__img-smile1,
