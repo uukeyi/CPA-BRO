@@ -67,6 +67,7 @@ html {
   line-height: 30px;
   font-size: 12px;
   opacity: 1;
+  transition: 1.7s;
   background: inherit !important;
 }
 .swiper-pagination-bullet-active {
@@ -366,7 +367,7 @@ html {
 .hero__button {
   font-weight: 300;
   font-size: 16px;
-  color: #fff;
+  color: #fff !important;
   position: absolute;
   bottom: 0;
   right: 60px;
@@ -1693,6 +1694,9 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
+   .about-us__item_green {
+      margin-top: -10px;
+   }
   .swiper-pagination {
     display: none !important;
   }
@@ -1701,16 +1705,14 @@ html {
   }
 
   .swiper-wrapper {
-    /* display: none !important; */
+
     display: flex !important;
     flex-wrap: wrap !important;
     pointer-events: none;
     width: 100vw !important;
     row-gap: 20px;
   }
-  .offers__card {
-    /* width: 89%; */
-  }
+
   .about-us__arrow {
     width: 25px;
     height: 25px;
@@ -1837,6 +1839,15 @@ html {
   }
 }
 @media screen and (max-width: 576px) {
+   .swiper-wrapper {
+      row-gap: 30px;
+   }
+   .mySwiper {
+      overflow: visible !important;
+   }
+   .swiper-slide {
+      margin-right: 30px !important;
+   }
   .hero__subtitle-mobile {
     display: block;
     margin-bottom: -40px;
@@ -2154,6 +2165,9 @@ html {
   .webmaster_block {
     padding: 15px 40px;
   }
+  .offers__card {
+   gap: 20px !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .offers__img {
@@ -2170,6 +2184,19 @@ html {
   }
 }
 @media screen and (max-width: 420px) {
+   .swiper-slide:not(:last-child) {
+      margin: 0 auto !important;
+   }
+   .swiper-slide:last-child {
+      margin-left: 14px !important;
+   }
+   .swiper-wrapper {
+      width: 100% !important;
+
+   }
+   .offers__card {
+      gap: 15px;
+   }
   .hero__subtitle-mobile {
     margin-bottom: -50px;
     font-size: 14px;
