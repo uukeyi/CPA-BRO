@@ -1,688 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>CPA Bro</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Unbounded:wght@200;300;400;500;600;800&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Unbounded:wght@200;300;400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="wrapper" class="wrapper">
-        <div class="wrapper-form-web">
-            <div class="registration_container webmaster_container">
-                <span class="registration__left_text webmaster-side-text webmaster_left_text">
-                    Вебмастер
-                </span>
-                <div class="registration_block webmaster_block">
-                    <p style="margin-top : 0px" class="registartion_label_input">
-                        e-mail
-                    </p>
-                    <input type="text" class="registration_input">
-                    <div class="registration_flex_container">
-                        <div class="registration_flex_block">
-                            <p class="registartion_label_input">
-                                password
-                            </p>
-                            <input type="password" class="registration_input">
-                        </div>
-                        <div class="registration_flex_block">
-                            <p class="registartion_label_input">
-                                password again
-                            </p>
-                            <input type="password" class="registration_input">
-                        </div>
-                    </div>
-                    <p class="registartion_label_input">
-                        username
-                    </p>
-                    <input type="text" class="registration_input">
-                    <p class="registartion_label_input">
-                        messenger
-                    </p>
-                    <input type="text" class="registration_input telegram_input">
-                    <p class="registartion_label_input">
-                        experience
-                    </p>
-                    <textarea class="registration_input textarea_input "></textarea>
-                    <div class="registration_flex_input_container">
-                        <label class="container-label">I agree with Terms and Conditions and Privacy Police.
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-
-                        <label class="container-label">Recieve newsletters.
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-
-                    </div>
-                    <button class="registration_main_btn">
-                        Submit
-                    </button>
-                </div>
-
-                <span class="registration__right_text webmaster-side-text webmaster_right_text">
-                    Вебмастер
-                </span>
-
+      <div class="wrapper-form-web">
+        <div class="registration_container webmaster_container">
+          <span class="registration__left_text webmaster-side-text webmaster_left_text">
+            Вебмастер
+          </span>
+          <div class="registration_block webmaster_block">
+            <p style="margin-top: 0px" class="registartion_label_input">e-mail</p>
+            <input type="text" class="registration_input" />
+            <div class="registration_flex_container">
+              <div class="registration_flex_block">
+                <p class="registartion_label_input">password</p>
+                <input type="password" class="registration_input" />
+              </div>
+              <div class="registration_flex_block">
+                <p class="registartion_label_input">password again</p>
+                <input type="password" class="registration_input" />
+              </div>
             </div>
-            <a href="#" class="goBack_btn_form webmaster_goBack_btn">Назад</a>
+            <p class="registartion_label_input">username</p>
+            <input type="text" class="registration_input" />
+            <p class="registartion_label_input">messenger</p>
+            <input type="text" class="registration_input telegram_input" />
+            <p class="registartion_label_input">experience</p>
+            <textarea class="registration_input textarea_input"></textarea>
+            <div class="registration_flex_input_container">
+              <label class="container-label"
+                >I agree with Terms and Conditions and Privacy Police.
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
 
+              <label class="container-label"
+                >Recieve newsletters.
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <button class="registration_main_btn">Submit</button>
+          </div>
+
+          <span class="registration__right_text webmaster-side-text webmaster_right_text">
+            Вебмастер
+          </span>
         </div>
-        <div class="wrapper-form-adv">
-            <div class="registration_container">
-                <span class="registration__left_text advertister-side-text advertister__left_text">
-                    рекламодатель
-                </span>
-                <form class="registration_block">
-                    <p style="margin-top : 0px" class="registartion_label_input">
-                        username
-                    </p>
-                    <input type="text" class="registration_input">
+        <a href="#" class="goBack_btn_form webmaster_goBack_btn">Назад</a>
+      </div>
+      <div class="wrapper-form-adv">
+        <div class="registration_container">
+          <span class="registration__left_text advertister-side-text advertister__left_text">
+            рекламодатель
+          </span>
+          <form class="registration_block">
+            <p style="margin-top: 0px" class="registartion_label_input">username</p>
+            <input type="text" class="registration_input" />
 
-                    <p class="registartion_label_input">
-                        product/service
-                    </p>
-                    <input type="text" class="registration_input">
-                    <p class="registartion_label_input">
-                        link to the product/service
-                    </p>
-                    <input type="text" class="registration_input">
-                    <p class="registartion_label_input">
-                        messenger
-                    </p>
-                    <input type="text" class="registration_input telegram_input">
-                    <p class="registartion_label_input">
-                        comments
-                    </p>
-                    <input type="text" class="registration_input">
-                    <div class="registration_flex_input_container">
-                        <label class="container-label">I agree with Terms and Conditions and Privacy Police.
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-
-
-
-                    </div>
-                    <button type="submit" class="registration_main_btn">
-                        Submit
-                    </button>
-                </form>
-                <span class="registration__right_text advertister-side-text advertister__right_text">
-                    рекламодатель
-                </span>
-
+            <p class="registartion_label_input">product/service</p>
+            <input type="text" class="registration_input" />
+            <p class="registartion_label_input">link to the product/service</p>
+            <input type="text" class="registration_input" />
+            <p class="registartion_label_input">messenger</p>
+            <input type="text" class="registration_input telegram_input" />
+            <p class="registartion_label_input">comments</p>
+            <input type="text" class="registration_input" />
+            <div class="registration_flex_input_container">
+              <label class="container-label"
+                >I agree with Terms and Conditions and Privacy Police.
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
             </div>
-            <a href="#" class="goBack_btn_form go_back_adv">Назад</a>
-
+            <button type="submit" class="registration_main_btn">Submit</button>
+          </form>
+          <span class="registration__right_text advertister-side-text advertister__right_text">
+            рекламодатель
+          </span>
         </div>
-        <div class="wrapper_registration">
-            <div class="wrapper_registration__block">
-                <div class="wrapper_registration__btn_container">
-                    <a href="#" class="webmaster_reg__btn">
-                        Вебмастер
-                    </a>
-                    <span class="reg-mini-span">или</span>
-                    <a href="#" class="advertiser_reg__btn">
-                        Рекламодатель
-                    </a>
-                </div>
+        <a href="#" class="goBack_btn_form go_back_adv">Назад</a>
+      </div>
+      <div class="wrapper_registration">
+        <div class="wrapper_registration__block">
+          <div class="wrapper_registration__btn_container">
+            <a href="#" class="webmaster_reg__btn"> Вебмастер </a>
+            <span class="reg-mini-span">или</span>
+            <a href="#" class="advertiser_reg__btn"> Рекламодатель </a>
+          </div>
 
-                <a href="/" class="reg_goBack__btn">Назад</a>
-            </div>
-
+          <a href="/" class="reg_goBack__btn">Назад</a>
         </div>
-        <div class="wrapper_login">
+      </div>
+      <div class="wrapper_login">
+        <div class="login_container">
+          <form class="login_block">
+            <p style="margin-top: 0px" class="login_label_input">username</p>
+            <input type="text" class="login_input" />
 
-            <div class="login_container">
+            <p class="login_label_input">password</p>
+            <input type="password" class="login_input" />
 
-                <form class="login_block">
-                    <p style="margin-top : 0px" class="login_label_input">
-                        username
-                    </p>
-                    <input type="text" class="login_input">
-
-                    <p class="login_label_input">
-                        password
-                    </p>
-                    <input type="password" class="login_input">
-
-                    <button type="submit" class="login_main_btn">
-                        Submit
-                    </button>
-                    <label class="container-label">Remember me
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                    </label>
-
-                </form>
-
-            </div>
-            <a href="/" class="goBack_login_btn">Назад</a>
-
-
+            <button type="submit" class="login_main_btn">Submit</button>
+            <label class="container-label"
+              >Remember me
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+          </form>
         </div>
-        <header class="header" id="header-section">
-            <div class="header__container container">
-                <a href="/"><img class="header__logo" src="./assets/icons/logo.png" alt="#" /></a>
-                <div class="header__link_container"><a class="sign_up__btn" href="#">Sign up </a><a class="login_btn"
-                        href="#">log in</a>
+        <a href="/" class="goBack_login_btn">Назад</a>
+      </div>
+      <header class="header" id="header-section">
+        <div class="header__container container">
+          <a href="/"><img class="header__logo" src="./assets/icons/logo.png" alt="#" /></a>
+          <div class="header__link_container">
+            <a class="sign_up__btn" href="#">Sign up </a><a class="login_btn" href="#">log in</a>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__menu_item">
+                <a href="#about-us" class="header__menu_link anchor">About</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="#offers" class="header__menu_link anchor">Offers</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="#faq" class="header__menu_link anchor">FAQ</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="#footer" class="header__menu_link anchor">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section id="hero">
+          <div class="hero__wrapper">
+            <div class="hero__main-content-wrapper">
+              <video
+                class="animation-video"
+                width="100%"
+                height="130%"
+                loop
+                autoplay
+                muted
+                playsinline
+              >
+                <source src="./assets/video/webm формат.webm" />
+              </video>
+              <div class="hero__text-wrapper">
+                <div class="hero__title-wrapper">
+                  <p class="hero__title-mobile">
+                    CPA <br />
+                    BRO
+                  </p>
+
+                  <p class="hero__title-pc">CPA</p>
+                  <p class="hero__title-pc">BRO</p>
                 </div>
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li class="header__menu_item">
-                            <a href="#about-us" class="header__menu_link anchor">About</a>
-                        </li>
-                        <li class="header__menu_item">
-                            <a href="#offers" class="header__menu_link anchor">Offers</a>
-                        </li>
-                        <li class="header__menu_item"><a href="#faq" class="header__menu_link anchor">FAQ</a></li>
-                        <li class="header__menu_item">
-                            <a href="#footer" class="header__menu_link anchor">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+
+                <p class="hero__subtitle">
+                  Turn our expertise<br />
+                  into your profit
+                </p>
+              </div>
             </div>
-        </header>
-        <main class="main">
-            <section id="hero">
-                <div class="hero__wrapper">
-                    <div class="hero__main-content-wrapper">
-                        <video class="animation-video" width="100%" height="130%" loop autoplay muted playsInline>
-                            <source src="./assets/video/webm формат.webm">
-                        </video>
-                        <div class="hero__text-wrapper">
-                            <div class="hero__title-wrapper">
-                                <p class="hero__title-mobile">
-                                    CPA <br />
-                                    BRO
 
-                                </p>
-
-                                <p class="hero__title-pc">CPA</p>
-                                <p class="hero__title-pc">BRO</p>
-                            </div>
-
-                            <p class="hero__subtitle">
-                                Turn our expertise<br />
-                                into your profit
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <button class="hero__button ru-btn">RU</button>
-                    <button class="hero__button english-btn">EN</button>
-
-
-                </div>
-                <div class="button-lang-wrapper">
-                    <div class="button-globus button-mobile">
-                        <img id="img-globus" src="./assets/icons/globus.png" alt="globus" />
-                        <div class="button-globus-cover">
-                            <span class="ru">RU &nbsp;</span>|<span class="en">&nbsp;EN</span>
-
-                        </div>
-
-                    </div>
-                </div>
-                <a class="button-arrow button-mobile anchor  button_menu_unactive" href="#wrapper"><img
-                        src="./assets/icons/arrowup.png" alt="arrow" /></a>
-            </section>
-            <p class="hero__subtitle-mobile">
-                Turn our expertise into your profit
-            </p>
-            <div class="mobile-navbar">
-                <a class="anchor" href="#about-us">About</a>
-                <a class="anchor" href="#offers">Offers</a>
-                <a class="anchor" href="#faq">FAQ</a>
-                <a class="anchor" href="#footer">Contact</a>
+            <button class="hero__button ru-btn">RU</button>
+            <button class="hero__button english-btn">EN</button>
+          </div>
+          <div class="button-lang-wrapper">
+            <div class="button-globus button-mobile">
+              <img id="img-globus" src="./assets/icons/globus.png" alt="globus" />
+              <div class="button-globus-cover">
+                <span class="ru">RU &nbsp;</span>|<span class="en">&nbsp;EN</span>
+              </div>
             </div>
-            <section id="about-us">
-                <div class="about-us__wrapper">
-                    <div class="about-us__left">
-                        <div class="about-us__item about-us__left-top about-us__item_grey">
-                            <p class="about-us__text about-us__about-us">О НАС</p>
-                            <div class="about-us__info-wrapper">
-                                <p class="about-us__left-title">5 ЛЕТ</p>
-                                <p class="about-us__left-text">На рынке CPA<br />и IGAMING</p>
-                            </div>
-                            <button class="about-us__left-top-button">
-                                <img src="./assets/icons/about-us__arrow.svg" alt="arrow" class="about-us__arrow" />
-                            </button>
-                        </div>
-                        <img src="./assets/icons/like.svg" alt="like" class="about-us__img-like" />
-                        <div class="about-us__item about-us__item_yellow about-us__item_big">
-                            <p id="applicationDevelop">
-                                Собственная разработка iOS & Android приложений для CPA BRO, а также сервис для
-                                внешней аренды BroApps
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-us__right">
-                        <div class="about-us__right-top">
-                            <div class="about-us__right-left">
-                                <div class="about-us__item">
-                                    <p id="teamBlock">Больше 4 WW in-house команд</p>
-                                </div>
-                                <div class="about-us__item">
-                                    <p id="communityBlock">Свое закрытое комьюнити FULL HOUSE</p>
-                                </div>
-                                <div class="about-us__item">
-                                    <p id="meetupBlock">Серия online Meet-up Aff2Traff</p>
-                                </div>
-                                <div class="about-us__item">
-                                    <p id="cazinoWithOffers">3 sportsbook & casino продукта по лицензиям Curacao и MGA,
-                                        Estonian</p>
-                                </div>
-                                <div class="about-us__item about-us__item_green">
-                                    <p id="creoBro">Сервис креативов SHINOBI</p>
-                                </div>
-                            </div>
-                            <div class="about-us__right-right">
-                                <div class="about-us__item about-us__item_big about-us__item_trans">
-                                    <p id="educationResource">Собственный образовательный ресурс PRESS AFF</p>
-                                </div>
-                                <div class="about-us__item about-us__item_orange about-us__item_big">
-                                    <p id="paymentSolution">Собственное платежное решение ChocoPay для платформ FB,
-                                        Google, TikTok</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about-us__right-bottom">
-                            <div
-                                class="about-us__item about-us__item_big about-us__item-right-bottom about-us__item_grey">
-                                <div>
-                                    <p id="yearsSecondaryTitle" class="about-us__right-title">3 ГОДА</p>
-                                    <p id="yearsSecondarySubtitle" class="about-us__right-text">
-                                        «Лучшая Gambling & Betting партнерская программа» по версии Affbank Awards
-                                        20/21/22
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="./assets/icons/smile.png" alt="smile" class="about-us__img-smile1" />
-                        <img src="./assets/icons/smile2.png" alt="smile" class="about-us__img-smile2" />
-                    </div>
+          </div>
+          <a class="button-arrow button-mobile anchor button_menu_unactive" href="#wrapper"
+            ><img src="./assets/icons/arrowup.png" alt="arrow"
+          /></a>
+        </section>
+        <p class="hero__subtitle-mobile">Turn our expertise into your profit</p>
+        <div class="mobile-navbar">
+          <a class="anchor" href="#about-us">About</a>
+          <a class="anchor" href="#offers">Offers</a>
+          <a class="anchor" href="#faq">FAQ</a>
+          <a class="anchor" href="#footer">Contact</a>
+        </div>
+        <section id="about-us">
+          <div class="about-us__wrapper">
+            <div class="about-us__left">
+              <div class="about-us__item about-us__left-top about-us__item_grey">
+                <p class="about-us__text about-us__about-us">О НАС</p>
+                <div class="about-us__info-wrapper">
+                  <p class="about-us__left-title">5 ЛЕТ</p>
+                  <p class="about-us__left-text">На рынке CPA<br />и IGAMING</p>
                 </div>
-            </section>
-            <section id="marquee_section">
-                <div class="marquee__line"></div>
-                <div class="marquee__content_container">
-                    <div class="marquee__flex_container_mobile">
-                        <div class="marquee__title_container">
-                            <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span>
-                            <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span>
-                        </div>
-                        <img class="marquee__bg marquee__bg_phone"
-                            src="./assets/marquee-section-img/marquee-phone-bg (3).png" alt="#" />
-                    </div>
-                    <img class="marquee__bg marquee__bg_desc" src="./assets/marquee-section-img/marquee-bg-laptop.png"
-                        alt="#" />
-                    <div class="marquee__subtitle_container">
-                        <p class="marquee__subtitle">
-                            CPA BRO — международная партнерская <br /> программа с опытом в iGaming индустрии <br />
-                            более 5 лет. Мы предлагаем лучшие условия <br /> на деле, а не на словах.
-                        </p>
-                        <a href="#wrapper" class="marquee__subtitle_link anchor">JOIN US</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="offers">
-                <div class="offers__container container">
-
-                    <div class="offers__title_container">
-                        <p class="offers__title">offers</p>
-                        <img class="offers__cursor_img1 cursor" src="./assets/offers-section-img/cursor-icon.svg"
-                            alt="#" />
-                        <img src="./assets/offers-section-img/arrow2.png" class="offers__cursor_img2 cursor" alt="#">
-                        <img src="./assets/offers-section-img/arrow2.png" class="offers__cursor_img3 cursor" alt="#">
-                        <img src="./assets/offers-section-img/arrow3.png" class="offers__cursor_img4 cursor" alt="#">
-
-                    </div>
-
-                    <div class="offers__card_container">
-                        <div class="swiper-pagination"></div>
-
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-
-                                    <div class="offers__card">
-                                        <div class="offers__img offers__img--leon">
-                                            <div class="offers_card__black-bg"></div>
-                                            <span>LEON</span> <img src="./assets/icons/leon-icon.svg" alt="LEON" />
-                                        </div>
-                                        <div data-id="leon" id="leon-offer" class="offers__description">
-                                            <p>
-                                                ГЕО — Португалия
-                                            </p>
-                                            <p>
-                                                источник — FB APPS
-                                            </p>
-                                            <p>
-                                                ставка — от 60 USD
-                                            </p>
-                                            <p>
-                                                мин.деп — 10
-                                                EUR
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="offers__card">
-                                        <div class="offers__img offers__img--tedbet">
-                                            <div class="offers_card__black-bg"></div>
-                                            <span>TEDBET</span> <img src="./assets/icons/tedbet-icon.svg" alt="#" />
-                                        </div>
-                                        <div data-id="tedbet" id="tedbet-offer" class="offers__description">
-                                            <p>
-                                                ГЕО — Южная Корея
-                                            </p>
-                                            <p>
-                                                источник — FB APPS
-                                            </p>
-                                            <p>
-                                                ставка — от 160 USD
-                                            </p>
-                                            <p>
-                                                мин.деп — 5 USD
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-
-                                    <div class="offers__card">
-                                        <div class="offers__img offers__img--1win">
-                                            <div class="offers_card__black-bg"></div>
-                                            <span>1WIN </span><img src="./assets/icons/1win_logo_border.svg" alt="#" />
-                                        </div>
-                                        <div data-id="onewin" id="onewin-offer" class="offers__description">
-                                            <p>
-                                                ГЕО — Бразилия
-                                            </p>
-                                            <p>
-                                                источник — FB APPS
-                                            </p>
-                                            <p>
-                                                ставка — от 20 USD
-                                            </p>
-                                            <p>
-                                                мин.деп — 30 BRL
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="offers__card">
-                                        <div class="offers__img offers__img--brazino">
-                                            <div class="offers_card__black-bg"></div>
-                                            <span>BRAZINO </span><img src="./assets/icons/brazino777-logo.svg"
-                                                alt="#" />
-                                        </div>
-                                        <div data-id="brazino" id="brazino-offer" class="offers__description">
-                                            <p>
-                                                ГЕО — Австралия
-                                            </p>
-                                            <p>
-                                                источник — PPC
-                                            </p>
-                                            <p>
-                                                ставка — от 40 USD
-                                            </p>
-                                            <p>
-                                                мин.деп — 30 BRL
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="offers__card">
-                                        <div class="offers__img offers__img--arlekino">
-                                            <div class="offers_card__black-bg"></div>
-                                            <span>ARLEKIN </span>
-                                        </div>
-                                        <div data-id="arlekin" id="arlekin-offer" class="offers__description">
-                                            <p>
-                                                ГЕО — НОРВЕГИЯ
-                                            </p>
-                                            <p>
-                                                источник — PPC
-                                            </p>
-                                            <p>
-                                                ставка — от 300 USD
-                                            </p>
-                                            <p>
-                                                мин.деп — 20 EUR
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="offers__card">
-                                        <div class="offers__img offers__img--kakadu">
-                                            <div class="offers_card__black-bg"></div>
-                                            <span>KAKADU </span>
-                                        </div>
-                                        <div data-id="kakadu" id="kakadu-offer" class="offers__description">
-                                            <p>
-                                                ГЕО — ГЕРМАНИЯ
-                                            </p>
-                                            <p>
-                                                источник — PPC
-                                            </p>
-                                            <p>
-                                                ставка — от 250 USD
-                                            </p>
-                                            <p>
-                                                мин.деп — 20 EUR
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="offers__card">
-                                        <div class="offers__img offers__img--abo">
-                                            <div class="offers_card__black-bg"></div>
-                                            <span>ABO </span>
-                                        </div>
-                                        <div data-id="abo" id="abo-offer" class="offers__description">
-                                            <p>
-                                                ГЕО — АВСТРАЛИЯ
-                                            </p>
-                                            <p>
-                                                источник — PPC
-                                            </p>
-                                            <p>
-                                                ставка — от 200 USD
-                                            </p>
-                                            <p>
-                                                мин.деп — 30 AUD
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="faq">
-                <div class="container">
-                    <hr class="faq__header_line" />
-                    <div class="faq__title_container">
-                        <p class="faq__abbreviated_title">Faq</p>
-                        <p class="faq__full_title">frequently asked questions</p>
-                    </div>
-
-                    <div class="faq__webmaster_block faq__block">
-                        <div class="faq__img_block">
-                            <img src="./assets/faq-section-img/faq-webmaster.png" alt="#" />
-                            <p class="faq__img_subtitle">Webmaster</p>
-                        </div>
-                        <hr class="faq__mobile_line" />
-                        <div class="faq__text_block">
-                            <div id="noExperience" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    У меня нет опыта в gambling
-                                    вертикали, могу ли я с вами
-                                    поработать?
-                                </p>
-                                <p class="faq__block_description">
-                                    Будучи приватной партнерской сетью, мы<br />
-                                    концентрируемся на работе с уже опытными<br />
-                                    вебмастерами. Однако, если у вас богатый опыт в<br />
-                                    других вертикалях и есть все необходимые ресурсы<br />
-                                    для запуска, мы без проблем подберем вам оффер<br />
-                                    и сориентируем по подходам.
-                                </p>
-                            </div>
-                            <div id="noVerification" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    Мой аккаунт не верифицируют,<br />
-                                    что делать?
-                                </p>
-                                <p class="faq__block_description">
-                                    Возможно вы не предоставили информацию о<br />
-                                    вашем опыте, источниках или не прикрепили<br />
-                                    статистику. Просим предоставить полную<br />
-                                    информацию, это сократит время верификации.
-                                </p>
-                            </div>
-                            <div id="availableOffers" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    Как мне получить доступ<br />
-                                    к офферам?
-                                </p>
-                                <p class="faq__block_description">
-                                    Самые «вкусные» продукты находятся в приватном<br />
-                                    доступе. После того, как саппорт или личный<br />
-                                    менеджер определит интересующее вас ГЕО, вам<br />
-                                    распишут все условия, откроют офферы и выдадут<br />
-                                    ссылки для залива!
-                                </p>
-                            </div>
-                            <div id="howToWorkWithUs" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    Как мне начать работать<br />
-                                    с вами?
-                                </p>
-                                <p class="faq__block_description">
-                                    Все просто: нужно зарегистрироваться в<br />
-                                    партнерской сети и дождаться ответа от<br />
-                                    @cpabrosupport. И, кстати, у нас самый быстрый<br />
-                                    саппорт на рынке!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faq__advertiser_block faq__block">
-                        <div class="faq__img_block">
-                            <img src="./assets/faq-section-img/faq-advertiser.png" alt="#" />
-                            <p class="faq__img_subtitle">Advertiser</p>
-                        </div>
-                        <hr class="faq__mobile_line" />
-                        <div class="faq__text_block">
-                            <div id="whichVertical" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    С какими вертикалями<br />
-                                    вы работаете?
-                                </p>
-                                <p class="faq__block_description">
-                                    CPA BRO узконаправленная партнерская сеть, мы работаем<br />
-                                    исключительно с Gambling и Betting вертикалями.
-                                </p>
-                            </div>
-                            <div id="whichGeo" class="faq__block_answer">
-                                <p class="faq__block_title">C какими гео вы работаете?</p>
-                                <p class="faq__block_description">
-                                    Мы работаем со всеми странами<br />
-                                    от Tier-1 до Tier-3.
-                                </p>
-                            </div>
-                            <div id="whichTrafficSources" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    Какие источники трафика<br />
-                                    являются для вас<br />
-                                    приоритетными?
-                                </p>
-                                <p class="faq__block_description">
-                                    Мы фокусируемся на HQ источниках, таких как<br />
-                                    SEO, PPC, ASO, ASA, Facebook и In-App.
-                                </p>
-                            </div>
-                            <div id="whichModelsTrafficPayment" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    C какими моделями оплаты<br />
-                                    трафика вы работаете?
-                                </p>
-                                <p class="faq__block_description">CPA, RevShare и Hybrid.</p>
-                            </div>
-                            <div id="availabilityInHouse" class="faq__block_answer">
-                                <p class="faq__block_title">У вас есть In-House команды?</p>
-                                <p class="faq__block_description">
-                                    Да, конечно. Одно из наших преимуществ — это внутренний <br /> медиабаинг команды
-                                    под различные,<br />
-                                    приоритетные для нас и рекламодателей направления.
-                                </p>
-                            </div>
-                            <div id="howToCopperate" class="faq__block_answer">
-                                <p class="faq__block_title">
-                                    Как можно начать<br />
-                                    сотрудничать с вами?
-                                </p>
-                                <p class="faq__block_description">
-                                    Все просто : заполните <a href=#wrapper class="faq_reg_link anchor">форму</a>
-                                    представленную<br />
-                                    на сайте, после чего с
-                                    вами свяжется наш саппорт,<br />
-                                    чтобы обсудить дальнейшие этапы сотрудничества.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer id="footer" class="footer">
-            <div class="footer__container container">
-                <div class="footer__title_container">
-                    <p class="footer__title">
-                        contact.
+                <button class="about-us__left-top-button">
+                  <img
+                    src="./assets/icons/about-us__arrow.svg"
+                    alt="arrow"
+                    class="about-us__arrow"
+                  />
+                </button>
+              </div>
+              <img src="./assets/icons/like.svg" alt="like" class="about-us__img-like" />
+              <div class="about-us__item about-us__item_yellow about-us__item_big">
+                <p id="applicationDevelop">
+                  Собственная разработка iOS & Android приложений для CPA BRO, а также сервис для
+                  внешней аренды BroApps
+                </p>
+              </div>
+            </div>
+            <div class="about-us__right">
+              <div class="about-us__right-top">
+                <div class="about-us__right-left">
+                  <div class="about-us__item">
+                    <p id="teamBlock">Больше 4 WW in-house команд</p>
+                  </div>
+                  <div class="about-us__item">
+                    <p id="communityBlock">Свое закрытое комьюнити FULL HOUSE</p>
+                  </div>
+                  <div class="about-us__item">
+                    <p id="meetupBlock">Серия online Meet-up Aff2Traff</p>
+                  </div>
+                  <div class="about-us__item">
+                    <p id="cazinoWithOffers">
+                      3 sportsbook & casino продукта по лицензиям Curacao и MGA, Estonian
                     </p>
-                    <div class="footer__cover_animation">
-                        <div class="footer__animation_line">
-
-                        </div>
-                    </div>
+                  </div>
+                  <div class="about-us__item about-us__item_green">
+                    <p id="creoBro">Сервис креативов SHINOBI</p>
+                  </div>
                 </div>
-                <div class="footer__feedback_container">
-                    <p class="footer__subtitle">© CPAbro, 2023 All rights reserved</p>
-                    <div class="footer__social_links_container">
-                        <a href="https://instagram.com/cpabro.vip?igshid=YmMyMTA2M2Y=" class="footer__social_link"><img
-                                src="./assets/icons/instagram.svg" alt="instagram" /></a><a
-                            href="https://www.youtube.com/@cpabrovip" class="footer__social_link"><img
-                                src="./assets/icons/youtube.svg" alt="youtube" /></a><a
-                            href="https://t.me/cpabrochannel" class="footer__social_link"><img
-                                src="./assets/icons/telegram.svg" alt="telegram" /></a>
-                    </div>
+                <div class="about-us__right-right">
+                  <div class="about-us__item about-us__item_big about-us__item_trans">
+                    <p id="educationResource">Собственный образовательный ресурс PRESS AFF</p>
+                  </div>
+                  <div class="about-us__item about-us__item_orange about-us__item_big">
+                    <p id="paymentSolution">
+                      Собственное платежное решение ChocoPay для платформ FB, Google, TikTok
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div class="about-us__right-bottom">
+                <div
+                  class="about-us__item about-us__item_big about-us__item-right-bottom about-us__item_grey"
+                >
+                  <div>
+                    <p id="yearsSecondaryTitle" class="about-us__right-title">3 ГОДА</p>
+                    <p id="yearsSecondarySubtitle" class="about-us__right-text">
+                      «Лучшая Gambling & Betting партнерская программа» по версии Affbank Awards
+                      20/21/22
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/icons/smile.png" alt="smile" class="about-us__img-smile1" />
+              <img src="./assets/icons/smile2.png" alt="smile" class="about-us__img-smile2" />
             </div>
-        </footer>
+          </div>
+        </section>
+        <section id="marquee_section">
+          <div class="marquee__line"></div>
+          <div class="marquee__content_container">
+            <div class="marquee__flex_container_mobile">
+              <div class="marquee__title_container">
+                <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span>
+                <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span> <span>BRO</span>
+              </div>
+              <img
+                class="marquee__bg marquee__bg_phone"
+                src="./assets/marquee-section-img/marquee-phone-bg (3).png"
+                alt="#"
+              />
+            </div>
+            <img
+              class="marquee__bg marquee__bg_desc"
+              src="./assets/marquee-section-img/marquee-bg-laptop.png"
+              alt="#"
+            />
+            <div class="marquee__subtitle_container">
+              <p class="marquee__subtitle">
+                CPA BRO — международная партнерская <br />
+                программа с опытом в iGaming индустрии <br />
+                более 5 лет. Мы предлагаем лучшие условия <br />
+                на деле, а не на словах.
+              </p>
+              <a href="#wrapper" class="marquee__subtitle_link anchor">JOIN US</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="offers">
+          <div class="offers__container container">
+            <div class="offers__title_container">
+              <p class="offers__title">offers</p>
+              <img
+                class="offers__cursor_img1 cursor"
+                src="./assets/offers-section-img/cursor-icon.svg"
+                alt="#"
+              />
+              <img
+                src="./assets/offers-section-img/arrow2.png"
+                class="offers__cursor_img2 cursor"
+                alt="#"
+              />
+              <img
+                src="./assets/offers-section-img/arrow2.png"
+                class="offers__cursor_img3 cursor"
+                alt="#"
+              />
+              <img
+                src="./assets/offers-section-img/arrow3.png"
+                class="offers__cursor_img4 cursor"
+                alt="#"
+              />
+            </div>
+
+            <div class="offers__card_container">
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="offers__card">
+                      <div class="offers__img offers__img--leon">
+                        <div class="offers_card__black-bg"></div>
+                        <span>LEON</span> <img src="./assets/icons/leon-icon.svg" alt="LEON" />
+                      </div>
+                      <div data-id="leon" id="leon-offer" class="offers__description">
+                        <p>ГЕО — Португалия</p>
+                        <p>источник — FB APPS</p>
+                        <p>ставка — от 60 USD</p>
+                        <p>мин.деп — 10 EUR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="offers__card">
+                      <div class="offers__img offers__img--tedbet">
+                        <div class="offers_card__black-bg"></div>
+                        <span>TEDBET</span> <img src="./assets/icons/tedbet-icon.svg" alt="#" />
+                      </div>
+                      <div data-id="tedbet" id="tedbet-offer" class="offers__description">
+                        <p>ГЕО — Южная Корея</p>
+                        <p>источник — FB APPS</p>
+                        <p>ставка — от 160 USD</p>
+                        <p>мин.деп — 5 USD</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="offers__card">
+                      <div class="offers__img offers__img--1win">
+                        <div class="offers_card__black-bg"></div>
+                        <span>1WIN </span><img src="./assets/icons/1win_logo_border.svg" alt="#" />
+                      </div>
+                      <div data-id="onewin" id="onewin-offer" class="offers__description">
+                        <p>ГЕО — Бразилия</p>
+                        <p>источник — FB APPS</p>
+                        <p>ставка — от 20 USD</p>
+                        <p>мин.деп — 30 BRL</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="offers__card">
+                      <div class="offers__img offers__img--brazino">
+                        <div class="offers_card__black-bg"></div>
+                        <span>BRAZINO </span
+                        ><img src="./assets/icons/brazino777-logo.svg" alt="#" />
+                      </div>
+                      <div data-id="brazino" id="brazino-offer" class="offers__description">
+                        <p>ГЕО — Австралия</p>
+                        <p>источник — PPC</p>
+                        <p>ставка — от 40 USD</p>
+                        <p>мин.деп — 30 BRL</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="offers__card">
+                      <div class="offers__img offers__img--arlekino">
+                        <div class="offers_card__black-bg"></div>
+                        <span>ARLEKIN </span>
+                      </div>
+                      <div data-id="arlekin" id="arlekin-offer" class="offers__description">
+                        <p>ГЕО — НОРВЕГИЯ</p>
+                        <p>источник — PPC</p>
+                        <p>ставка — от 300 USD</p>
+                        <p>мин.деп — 20 EUR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="offers__card">
+                      <div class="offers__img offers__img--kakadu">
+                        <div class="offers_card__black-bg"></div>
+                        <span>KAKADU </span>
+                      </div>
+                      <div data-id="kakadu" id="kakadu-offer" class="offers__description">
+                        <p>ГЕО — ГЕРМАНИЯ</p>
+                        <p>источник — PPC</p>
+                        <p>ставка — от 250 USD</p>
+                        <p>мин.деп — 20 EUR</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="offers__card">
+                      <div class="offers__img offers__img--abo">
+                        <div class="offers_card__black-bg"></div>
+                        <span>ABO </span>
+                      </div>
+                      <div data-id="abo" id="abo-offer" class="offers__description">
+                        <p>ГЕО — АВСТРАЛИЯ</p>
+                        <p>источник — PPC</p>
+                        <p>ставка — от 200 USD</p>
+                        <p>мин.деп — 30 AUD</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="faq">
+          <div class="container">
+            <hr class="faq__header_line" />
+            <div class="faq__title_container">
+              <p class="faq__abbreviated_title">Faq</p>
+              <p class="faq__full_title">frequently asked questions</p>
+            </div>
+
+            <div class="faq__webmaster_block faq__block">
+              <div class="faq__img_block">
+                <img src="./assets/faq-section-img/faq-webmaster.png" alt="#" />
+                <p class="faq__img_subtitle">Webmaster</p>
+              </div>
+              <hr class="faq__mobile_line" />
+              <div class="faq__text_block">
+                <div id="noExperience" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    У меня нет опыта в gambling вертикали, могу ли я с вами поработать?
+                  </p>
+                  <p class="faq__block_description">
+                    Будучи приватной партнерской сетью, мы<br />
+                    концентрируемся на работе с уже опытными<br />
+                    вебмастерами. Однако, если у вас богатый опыт в<br />
+                    других вертикалях и есть все необходимые ресурсы<br />
+                    для запуска, мы без проблем подберем вам оффер<br />
+                    и сориентируем по подходам.
+                  </p>
+                </div>
+                <div id="noVerification" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Мой аккаунт не верифицируют,<br />
+                    что делать?
+                  </p>
+                  <p class="faq__block_description">
+                    Возможно вы не предоставили информацию о<br />
+                    вашем опыте, источниках или не прикрепили<br />
+                    статистику. Просим предоставить полную<br />
+                    информацию, это сократит время верификации.
+                  </p>
+                </div>
+                <div id="availableOffers" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Как мне получить доступ<br />
+                    к офферам?
+                  </p>
+                  <p class="faq__block_description">
+                    Самые «вкусные» продукты находятся в приватном<br />
+                    доступе. После того, как саппорт или личный<br />
+                    менеджер определит интересующее вас ГЕО, вам<br />
+                    распишут все условия, откроют офферы и выдадут<br />
+                    ссылки для залива!
+                  </p>
+                </div>
+                <div id="howToWorkWithUs" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Как мне начать работать<br />
+                    с вами?
+                  </p>
+                  <p class="faq__block_description">
+                    Все просто: нужно зарегистрироваться в<br />
+                    партнерской сети и дождаться ответа от<br />
+                    @cpabrosupport. И, кстати, у нас самый быстрый<br />
+                    саппорт на рынке!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq__advertiser_block faq__block">
+              <div class="faq__img_block">
+                <img src="./assets/faq-section-img/faq-advertiser.png" alt="#" />
+                <p class="faq__img_subtitle">Advertiser</p>
+              </div>
+              <hr class="faq__mobile_line" />
+              <div class="faq__text_block">
+                <div id="whichVertical" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    С какими вертикалями<br />
+                    вы работаете?
+                  </p>
+                  <p class="faq__block_description">
+                    CPA BRO узконаправленная партнерская сеть, мы работаем<br />
+                    исключительно с Gambling и Betting вертикалями.
+                  </p>
+                </div>
+                <div id="whichGeo" class="faq__block_answer">
+                  <p class="faq__block_title">C какими гео вы работаете?</p>
+                  <p class="faq__block_description">
+                    Мы работаем со всеми странами<br />
+                    от Tier-1 до Tier-3.
+                  </p>
+                </div>
+                <div id="whichTrafficSources" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Какие источники трафика<br />
+                    являются для вас<br />
+                    приоритетными?
+                  </p>
+                  <p class="faq__block_description">
+                    Мы фокусируемся на HQ источниках, таких как<br />
+                    SEO, PPC, ASO, ASA, Facebook и In-App.
+                  </p>
+                </div>
+                <div id="whichModelsTrafficPayment" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    C какими моделями оплаты<br />
+                    трафика вы работаете?
+                  </p>
+                  <p class="faq__block_description">CPA, RevShare и Hybrid.</p>
+                </div>
+                <div id="availabilityInHouse" class="faq__block_answer">
+                  <p class="faq__block_title">У вас есть In-House команды?</p>
+                  <p class="faq__block_description">
+                    Да, конечно. Одно из наших преимуществ — это внутренний <br />
+                    медиабаинг команды под различные,<br />
+                    приоритетные для нас и рекламодателей направления.
+                  </p>
+                </div>
+                <div id="howToCopperate" class="faq__block_answer">
+                  <p class="faq__block_title">
+                    Как можно начать<br />
+                    сотрудничать с вами?
+                  </p>
+                  <p class="faq__block_description">
+                    Все просто : заполните
+                    <a href="#wrapper" class="faq_reg_link anchor">форму</a> представленную<br />
+                    на сайте, после чего с вами свяжется наш саппорт,<br />
+                    чтобы обсудить дальнейшие этапы сотрудничества.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer" class="footer">
+        <div class="footer__container container">
+          <div class="footer__title_container">
+            <p class="footer__title">contact.</p>
+            <div class="footer__cover_animation">
+              <div class="footer__animation_line"></div>
+            </div>
+          </div>
+          <div class="footer__feedback_container">
+            <p class="footer__subtitle">© CPAbro, 2023 All rights reserved</p>
+            <div class="footer__social_links_container">
+              <a
+                href="https://instagram.com/cpabro.vip?igshid=YmMyMTA2M2Y="
+                class="footer__social_link"
+                ><img src="./assets/icons/instagram.svg" alt="instagram" /></a
+              ><a href="https://www.youtube.com/@cpabrovip" class="footer__social_link"
+                ><img src="./assets/icons/youtube.svg" alt="youtube" /></a
+              ><a href="https://t.me/cpabrochannel" class="footer__social_link"
+                ><img src="./assets/icons/telegram.svg" alt="telegram"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
