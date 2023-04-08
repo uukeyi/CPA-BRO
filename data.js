@@ -68,7 +68,7 @@ const obj = {
       },
       howToCopperate: {
         title: 'Как можно начать сотрудничать с вами?',
-        answer: `Все просто: заполните <a href = #wrapper class = "faq_reg_link anchor" >форму</a>  представленную на сайте , после чего с вами свяжется наш саппорт, чтобы обсудить дальнейшие этапы сотрудничества.`,
+        answer: `Все просто: заполните <a href = #wrapper class = "faq_reg_link anchor" >форму ,</a>  представленную на сайте , после чего с вами свяжется наш саппорт, чтобы обсудить дальнейшие этапы сотрудничества.`,
       },
       noExperience: {
         title: 'У меня нет опыта в gambling вертикали, могу ли я с вами поработать?',
@@ -101,7 +101,7 @@ const obj = {
         'In-house Android and iOS app development for CPA BRO partners, and application rental service BroApps',
       teamBlock: '4+ in-house teams worldwide ',
       communityBlock: 'Private community Full House',
-      meetupBlock: 'online Meet-ups Aff2Traff ',
+      meetupBlock: 'Online Meet-ups Aff2Traff ',
       cazinoWithOffers: '3 sportsbook & casino offers with Curacao and MGA licenses (Estonian)',
       creoBro: 'Ad creatives service SHINOBI',
       yearsSecondaryTitle: '3 YEARS',

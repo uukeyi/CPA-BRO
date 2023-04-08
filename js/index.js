@@ -4,13 +4,12 @@ const swiper = new Swiper(".mySwiper", {
    slidesPerView: 4,
    spaceBetween: 40,
    slidesPerGroup: 3,
-   // allowTouchMode : false,
-   // noSwiping: true,
-   pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicMainBullets: 5,
-   },
+   scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+      hide : true
+    },
+  
    breakpoints: {
       1600: {
          slidesPerView: 4,
@@ -100,8 +99,7 @@ const advertisterRightText = document.querySelector(".advertister__right_text");
 const webmasterRightText = document.querySelector(".webmaster_right_text");
 const webmasterLeftText = document.querySelector(".webmaster_left_text");
 const marqueeSubtitleLink = document.querySelector(".marquee__subtitle_link");
-const ruBtnDesktop = document.querySelector(".ru-btn");
-const enBtnDesktop = document.querySelector(".english-btn");
+const footerAnimationLine = document.querySelector('.footer__animation_line')
 let words = ["5 ЛЕТ"];
 
 const changeLanguage = (prefix, e) => {
@@ -283,7 +281,6 @@ goBackLogin.addEventListener("click", (e) => {
    e.preventDefault();
    document.body.style.overflow = "auto";
    document.body.style.height = "auto";
-
    wrapperLogin.classList.remove("wrapper_login_active");
    goBackLogin.classList.remove("goBack_login_btn_active");
    loginContainer.classList.remove("login_container_active");
@@ -323,26 +320,21 @@ window.addEventListener("DOMContentLoaded", function () {
    if (localStorage.getItem("lang") !== null) {
       changeLanguage(localStorage.getItem("lang"));
    }
-   // if (window.screen.width <= 576) {
-   //    window.addEventListener(
-   //       "scroll",
-   //       function () {
-   //          globusBtn.classList.remove("button_menu_active");
-   //          globusBtn.classList.add("button_menu_unactive");
-   //          arrowBtn.classList.remove("button_menu_unactive");
-   //          arrowBtn.classList.add("button_menu_active");
-
-   //          globusBtn.classList.remove("button-globus-active");
-   //          if (window.pageYOffset === 0) {
-   //             globusBtn.classList.remove("button_menu_unactive");
-   //             globusBtn.classList.add("button_menu_active");
-   //             arrowBtn.classList.remove("button_menu_active");
-   //             arrowBtn.classList.add("button_menu_unactive");
-   //          }
-   //       },
-   //       false
-   //    );
-   // }
+   if (window.screen.width <= 576) {
+      window.addEventListener(
+         "scroll",
+         function () {
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+               footerAnimationLine.style.left = '0'
+               footerAnimationLine.style.opacity = "1"
+            }else {
+               footerAnimationLine.style.left = '-100%'
+               footerAnimationLine.style.opacity = "0"
+            }
+         },
+         false
+      );
+   }
 });
 
 const anchors = document.querySelectorAll(".anchor");
