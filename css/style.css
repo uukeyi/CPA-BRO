@@ -1694,9 +1694,9 @@ html {
   }
 }
 @media screen and (max-width: 768px) {
-   .about-us__item_green {
-      margin-top: -10px;
-   }
+  .about-us__item_green {
+    margin-top: -10px;
+  }
   .swiper-pagination {
     display: none !important;
   }
@@ -1705,7 +1705,6 @@ html {
   }
 
   .swiper-wrapper {
-
     display: flex !important;
     flex-wrap: wrap !important;
     pointer-events: none;
@@ -1839,15 +1838,15 @@ html {
   }
 }
 @media screen and (max-width: 576px) {
-   .swiper-wrapper {
-      row-gap: 30px;
-   }
-   .mySwiper {
-      overflow: visible !important;
-   }
-   .swiper-slide {
-      margin-right: 30px !important;
-   }
+  .swiper-wrapper {
+    row-gap: 30px;
+  }
+  .mySwiper {
+    overflow: visible !important;
+  }
+  .swiper-slide {
+    margin-right: 30px !important;
+  }
   .hero__subtitle-mobile {
     display: block;
     margin-bottom: -40px;
@@ -2166,7 +2165,7 @@ html {
     padding: 15px 40px;
   }
   .offers__card {
-   gap: 20px !important;
+    gap: 20px !important;
   }
 }
 @media screen and (max-width: 500px) {
@@ -2184,19 +2183,18 @@ html {
   }
 }
 @media screen and (max-width: 420px) {
-   .swiper-slide:not(:last-child) {
-      margin: 0 auto !important;
-   }
-   .swiper-slide:last-child {
-      margin-left: 14px !important;
-   }
-   .swiper-wrapper {
-      width: 100% !important;
-
-   }
-   .offers__card {
-      gap: 15px;
-   }
+  .swiper-slide:not(:last-child) {
+    margin: 0 auto !important;
+  }
+  .swiper-slide:last-child {
+    margin-left: 14px !important;
+  }
+  .swiper-wrapper {
+    width: 100% !important;
+  }
+  .offers__card {
+    gap: 15px;
+  }
   .hero__subtitle-mobile {
     margin-bottom: -50px;
     font-size: 14px;
