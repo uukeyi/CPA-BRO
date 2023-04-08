@@ -23,61 +23,30 @@ html {
 * {
   font-family: Unbounded, sans-serif;
 }
-/* .swiper {
-   width: 100%;
-   height: 100%;
- }
 
- .swiper-slide {
-   text-align: center;
-   font-size: 18px;
-   background: #fff;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
-
- .swiper-slide img {
-   display: block;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
- } */
-.swiper-pagination {
-  /* width: 40px !important; */
-  /* height: 40px; */
+.swiper-scrollbar {
   top: 0px !important;
-  /* bottom: 33px !important; */
   height: 9px;
   padding: 0px !important;
   gap: 0px !important;
-  background: #ececec;
+  background: #ececec !important;
   border-radius: 20px;
   display: flex !important;
+  opacity: 1 !important;
+  cursor: pointer;
+}
+.swiper-scrollbar-drag {
+  background: #cacaca !important;
 }
 .mySwiper {
   top: 65px !important;
 }
-.swiper-pagination-bullet {
-  display: block;
-  border-radius: 20px !important;
-  width: 100% !important;
-  margin: 0px !important;
-  text-align: center;
-  line-height: 30px;
-  font-size: 12px;
-  opacity: 1;
-  transition: 1.7s;
-  background: inherit !important;
-}
-.swiper-pagination-bullet-active {
-  background: #cacaca !important;
-  border-radius: 20px !important;
-}
+
 .wrapper {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  animation: 0.8s linear infinite changeColor;
 }
 .wrapper_registration,
 .wrapper_login {
@@ -263,6 +232,7 @@ html {
   margin-top: 80px;
   height: 126px;
   width: 100%;
+  background-color: transparent;
 }
 .header__container {
   height: 100%;
@@ -274,6 +244,7 @@ html {
 .header__link_container {
   display: flex;
   gap: 32px;
+  margin-left: -35px;
 }
 .header__link_container > a {
   font-weight: 400;
@@ -305,13 +276,17 @@ html {
   max-width: 120px;
   max-height: 75px;
 }
+#about-us {
+  background: black;
+}
 #about-us,
 #hero {
   display: flex;
   justify-content: center;
 }
 #hero {
-  /* animation: 15s linear infinite changeColor; */
+  background: transparent;
+  animation: 0.8s linear infinite changeColor;
 }
 @keyframes changeColor {
   0% {
@@ -367,7 +342,6 @@ html {
 .hero__button {
   font-weight: 300;
   font-size: 16px;
-  color: #fff !important;
   position: absolute;
   bottom: 0;
   right: 60px;
@@ -424,7 +398,7 @@ html {
 .button-mobile {
   border: #da573c 1px solid;
   border-radius: 50%;
-  background-color: #da573c;
+  background: #da573c;
   width: 55px;
   height: 55px;
   display: flex !important;
@@ -498,6 +472,7 @@ html {
   margin: -5px auto;
   height: 12px;
 }
+
 .button-globus {
   position: relative;
   z-index: 10;
@@ -742,13 +717,37 @@ html {
 .about-us__img-smile1 {
   right: 155px;
   bottom: 223px;
-  animation: 2s ease-in-out infinite up-down1;
+  /* -webkit-animation: 2s ease-in-out infinite up-down1;
+  animation: 2s ease-in-out infinite up-down1; */
 }
 .about-us__img-smile2 {
   right: 0;
   bottom: 0;
-  animation: 2s ease-in-out infinite up-down2;
+  /* -webkit-animation: 2s ease-in-out infinite up-down2;
+  animation: 2s ease-in-out infinite up-down2; */
 }
+/* @-webkit-keyframes up-down1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes up-down2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
 .about-us__img-like {
   animation: 2s ease-in-out infinite up-down1;
 }
@@ -883,7 +882,7 @@ html {
   align-items: center;
   width: 545px;
   height: 108px;
-  background: #de5722;
+  background: #da573c;
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
@@ -1692,16 +1691,17 @@ html {
   .about-us__img-like {
     width: 151px;
   }
+  .marquee__bg_phone {
+    margin-top: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   .about-us__item_green {
     margin-top: -10px;
   }
-  .swiper-pagination {
-    display: none !important;
-  }
+
   #yearsSecondaryTitle {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 
   .swiper-wrapper {
@@ -1788,7 +1788,6 @@ html {
   }
   .hero__button {
     font-size: 10px;
-    bottom: -60px;
   }
   .offers__img {
     height: 300px;
@@ -1836,8 +1835,21 @@ html {
   .faq__full_title {
     font-size: 45px;
   }
+  .swiper-scrollbar {
+    display: none !important;
+  }
+
+  .marquee__bg_phone {
+    margin-top: 80px;
+  }
 }
 @media screen and (max-width: 576px) {
+  .marquee__bg_phone {
+    margin: 20px auto 0px auto;
+  }
+  .about-us__item_green {
+    margin-top: -35px;
+  }
   .swiper-wrapper {
     row-gap: 30px;
   }
@@ -1880,10 +1892,10 @@ html {
     width: 230vw;
   }
   #offers {
-    padding: 28px 0px 146px 0px;
+    padding: 8px 0px 156px 0px !important;
   }
   .offers__title {
-    margin-bottom: -70px;
+    margin-bottom: -120px !important;
   }
   .years-title-en {
     font-size: 67px !important;
@@ -2045,6 +2057,7 @@ html {
   .marquee__subtitle_container {
     margin-top: 0px;
     padding-bottom: 64px;
+    padding-right: 30px;
   }
   .marquee__subtitle_link {
     margin-top: 14px;
