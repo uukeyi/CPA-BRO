@@ -292,14 +292,11 @@ html {
   0% {
     background-color: black;
   }
-  25% {
+  33% {
     background: #2f408e;
   }
-  50% {
+  66% {
     background: #de5722;
-  }
-  75% {
-    background: #fff;
   }
   100% {
     background: black;
@@ -324,7 +321,7 @@ html {
 .hero__title-pc {
   font-family: 'ArtoCondensed', sans-serif;
   font-weight: 750;
-  color: #da573c;
+  color: #fff;
   font-size: 20vw;
   line-height: 0.7;
 }
@@ -545,7 +542,6 @@ html {
 .footer__title_container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 }
 .footer__title_container:hover .footer__animation_line {
   left: 0;
@@ -601,6 +597,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: end;
+  -webkit-align-items: flex-end;
   position: relative;
 }
 .about-us__item {
@@ -748,9 +745,9 @@ html {
     transform: translateY(0);
   }
 } */
-.about-us__img-like {
+/* .about-us__img-like {
   animation: 2s ease-in-out infinite up-down1;
-}
+} */
 .about-us__img {
   width: 100%;
   height: 100%;
@@ -2124,7 +2121,7 @@ html {
   }
   .about-us__right-left {
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     grid-gap: 20px;
     flex-direction: row;
@@ -2254,6 +2251,11 @@ html {
   .hero__title-mobile {
     font-size: 260px;
     line-height: 200px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer__title {
+    font-size: 44px;
   }
 }
 @media screen and (max-width: 350px) {

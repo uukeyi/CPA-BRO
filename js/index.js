@@ -96,32 +96,69 @@ const webmasterRightText = document.querySelector('.webmaster_right_text');
 const webmasterLeftText = document.querySelector('.webmaster_left_text');
 const marqueeSubtitleLink = document.querySelector('.marquee__subtitle_link');
 const footerAnimationLine = document.querySelector('.footer__animation_line');
+const like = document.querySelector('.about-us__img-like');
 const smile1 = document.querySelector('.about-us__img-smile1');
 const smile2 = document.querySelector('.about-us__img-smile2');
-const smile1anim = smile1.animate(
-  [
-    { transform: 'translateY(0)' },
-    { transform: 'translateY(10%)' },
-    { transform: 'translateY(0)' },
-  ],
-  {
-    duration: 2000, // animation duration in milliseconds
-    easing: 'ease-in-out', // animation easing function
-    iterations: Infinity, // how many times the animation should repeat
+
+smile1.style.transform = 'translateY(0)';
+smile1.style.transition = '1s';
+smile1.style.transitionTimingFunction = 'ease-in-out';
+like.style.transform = 'translateY(0)';
+like.style.transition = '1s';
+like.style.transitionTimingFunction = 'ease-in-out';
+let translateY1 = 0;
+let direction1 = 1;
+
+smile2.style.transform = 'translateY(0)';
+smile2.style.transition = '1s';
+smile2.style.transitionTimingFunction = 'ease-in-out';
+let translateY2 = 0;
+let direction2 = 1;
+
+function animateSmile1() {
+  translateY1 += direction1 * 10;
+  smile1.style.transform = 'translateY(' + translateY1 + '%)';
+  like.style.transform = 'translateY(' + translateY1 + '%)';
+  if (translateY1 >= 10 || translateY1 <= 0) {
+    direction1 *= -1;
   }
-);
-const smile2anim = smile2.animate(
-  [
-    { transform: 'translateY(0)' },
-    { transform: 'translateY(-10%)' },
-    { transform: 'translateY(0)' },
-  ],
-  {
-    duration: 2000, // animation duration in milliseconds
-    easing: 'ease-in-out', // animation easing function
-    iterations: Infinity, // how many times the animation should repeat
+}
+
+function animateSmile2() {
+  translateY2 += direction2 * -10;
+  smile2.style.transform = 'translateY(' + translateY2 + '%)';
+
+  if (translateY2 <= -10 || translateY2 >= 0) {
+    direction2 *= -1;
   }
-);
+}
+
+let intervalId1 = setInterval(animateSmile1, 1000);
+
+let intervalId2 = setInterval(animateSmile2, 1000);
+
+let iterations = 10;
+let currentIteration = 0;
+
+function stopAnimations() {
+  clearInterval(intervalId1);
+  clearInterval(intervalId2);
+}
+
+intervalId1.callback = function () {
+  currentIteration++;
+  if (currentIteration >= iterations) {
+    stopAnimations();
+  }
+};
+
+intervalId2.callback = function () {
+  currentIteration++;
+  if (currentIteration >= iterations) {
+    stopAnimations();
+  }
+};
+
 let words = ['5 ЛЕТ'];
 let part,
   i = 0,
