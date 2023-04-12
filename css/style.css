@@ -26,7 +26,7 @@ html {
 
 .swiper-scrollbar {
   top: 0px !important;
-  height: 9px;
+  height: 9px !important;
   padding: 0px !important;
   gap: 0px !important;
   background: #ececec !important;
@@ -46,7 +46,6 @@ html {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  animation: 0.8s linear infinite changeColor;
 }
 .wrapper_registration,
 .wrapper_login {
@@ -302,6 +301,7 @@ html {
     background: black;
   }
 }
+
 #about-us {
   overflow-x: hidden;
 }
@@ -309,7 +309,7 @@ html {
 #hero {
   height: 42vw;
   padding: 50px 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .hero__wrapper {
   width: 1920px;
@@ -343,13 +343,21 @@ html {
   bottom: 0;
   right: 60px;
 }
+
 .animation-video {
   top: 50%;
+  min-width: 100% !important;
   pointer-events: none;
   left: 50%;
-  height: 140%;
   transform: translate(-50%, -50%);
   position: absolute;
+  height: 100%;
+  width: 177.77777778vh;
+  min-width: 100%;
+  min-height: 55.25vw;
+}
+.animation-video source {
+  width: 100%;
 }
 .hero__img {
   position: absolute;
@@ -710,6 +718,7 @@ html {
 .about-us__img-smile2 {
   position: absolute;
   width: 340px;
+  transition: 2s;
 }
 .about-us__img-smile1 {
   right: 155px;
@@ -743,7 +752,7 @@ html {
   }
   100% {
     transform: translateY(0);
-  }
+  } 
 } */
 /* .about-us__img-like {
   animation: 2s ease-in-out infinite up-down1;
@@ -1932,7 +1941,7 @@ html {
     text-align: center;
     font-family: 'ArtoCondensed', sans-serif;
     font-weight: 800;
-    color: #da573c;
+    color: #fff;
     line-height: 256px;
   }
   .hero__subtitle {
