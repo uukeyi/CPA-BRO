@@ -13,7 +13,7 @@
    justify-content: center;
    align-items: center;
    background: black;
-
+   transition: 1s;
    pointer-events: none;
 }
 .wrapper-form-adv-active,
@@ -21,6 +21,7 @@
    opacity: 1;
    pointer-events: all;
    z-index: 100000;
+   transition: 4s;
 }
 .registration_container {
    display: flex;

@@ -773,6 +773,9 @@ html {
    height: 25px;
    background: #777e80;
 }
+.marquee__line {
+   background: #d9d9d9;
+}
 .about_us__bg,
 .marquee__bg {
    position: relative;
@@ -1090,6 +1093,7 @@ html {
    font-size: 14px;
    line-height: 140%;
    color: #ffffff;
+   margin-left: 10px;
 }
 .project__item_card--big_subtitle {
    position: absolute;
@@ -1165,6 +1169,9 @@ html {
    width: 100%;
    border-radius: 20px;
    transition: 1.2s linear;
+}
+.offers_card__black-bg {
+   border-radius: 30px;
 }
 .offers__img:hover .offers_card__black-bg {
    opacity: 1;
@@ -1453,6 +1460,7 @@ html {
 @media screen and (max-width: 1620px) {
    .marquee__subtitle_ru {
       margin-top: 30px;
+      margin-left: 0px;
    }
    .marquee__subtitle_ru > br {
       display: none;
@@ -1558,6 +1566,15 @@ html {
 
    .offers__img {
       font-size: 38px;
+   }
+   .marquee__subtitle_en > br {
+      display: none;
+   }
+   .marquee__bg_desc {
+      width: 45%;
+   }
+   .js-marquee > span {
+      font-size: 260px;
    }
 }
 @media screen and (max-width: 1400px) {

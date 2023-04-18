@@ -111,7 +111,7 @@ const obj = {
       paymentSolution: 'Payment solution ChocoPay for Facebook, Google, and TikTok Ads',
     },
     joinUs: {
-      text: `<p>CPA BRO — an international affiliate network with <br/>  5+ years of expertise in iGaming. We walk the talk <br/>  when providing you the best deals.</p>`,
+      text: `<p class = "marquee__subtitle_en">CPA BRO — an international affiliate network with <br/>  5+ years of expertise in iGaming. We walk the talk <br/>  when providing you the best deals.</p>`,
     },
     form: {
       webmaster: 'Webmaster',

@@ -130,14 +130,15 @@ Array.from(projectHiddenText).forEach((hiddenText) => {
       e.target.nextElementSibling.play();
    });
 });
-let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-if (isSafari) {
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+var ua = navigator.userAgent; 
+if (!isChrome || ua.search(/YaBrowser/) > 0) {
    heroSubtitle.style.marginTop = "40px";
    if (window.screen.width >= 1400) {
       marqueeContentContainer.style.marginTop = "-50px";
    }
    if (window.screen.width >= 1400 && window.screen.width <= 1550) {
-      marqueeContentContainer.style.marginTop = "-220px";
+      marqueeContentContainer.style.marginTop = "-250px";
    }
 } else {
    heroSubtitle.style.marginTop = "0px";
@@ -279,13 +280,13 @@ const changeLanguage = (prefix, e) => {
       webmasterLeftText.classList.add("sidetext-en-left");
       enBtn.style.fontWeight = "700";
       ruBtn.style.fontWeight = "400";
-      desktopRuBtn.style.color = "white";
-      desktopEnBtn.style.color = "#DE5722";
+      desktopRuBtn.style.fontWeight = "300";
+      desktopEnBtn.style.fontWeight = "800";
    } else {
       ruBtn.style.fontWeight = "700";
       enBtn.style.fontWeight = "400";
-      desktopRuBtn.style.color = "#DE5722";
-      desktopEnBtn.style.color = "white";
+      desktopRuBtn.style.fontWeight = "800";
+      desktopEnBtn.style.fontWeight = "300";
       webmasterRightText.classList.remove("sidetext-en-right");
       webmasterLeftText.classList.remove("sidetext-en-left");
       advertisterRightText.classList.remove("sidetext-en-right");
@@ -501,15 +502,15 @@ enBtn.addEventListener("click", (e) => {
 });
 desktopRuBtn.addEventListener("click", (e) => {
    localStorage.setItem("lang", "ru");
-   desktopEnBtn.style.color = "white";
-   desktopRuBtn.style.color = "#DE5722";
+   desktopEnBtn.style.fontWeight = "300";
+   desktopRuBtn.style.fontWeight = "800"
 
    changeLanguage("ru", e);
 });
 desktopEnBtn.addEventListener("click", (e) => {
    localStorage.setItem("lang", "en");
-   desktopRuBtn.style.color = "white";
-   desktopEnBtn.style.color = "#DE5722";
+   desktopRuBtn.style.fontWeight = "300";
+   desktopEnBtn.style.fontWeight = "800";
    webmasterRightText.classList.add("sidetext-en-right");
    webmasterLeftText.classList.add("sidetext-en-left");
    advertisterRightText.classList.add("sidetext-en-right");
