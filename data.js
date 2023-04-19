@@ -1,6 +1,7 @@
 const obj = {
   ru: {
     aboutUs: {
+      getTopOfferList: 'Получить список офферов',
       title: 'О НАС',
       yearsMainTitle: '5 ЛЕТ',
       yearsMainSubtitle: 'На рынке CPA и iGaming',
@@ -80,6 +81,7 @@ const obj = {
         answer:
           'Возможно вы не предоставили информацию о вашем опыте, источниках или не прикрепили статистику. Просим предоставить полную информацию, это сократит время верификации.',
       },
+
       availableOffers: {
         title: 'Как мне получить доступ к офферам?',
         answer:
@@ -94,9 +96,11 @@ const obj = {
   },
   en: {
     aboutUs: {
+      getTopOfferList: 'Get the TOP offer list',
       title: 'ABOUT US',
       yearsMainTitle: '5 YEARS',
       yearsMainSubtitle: 'In CPA and iGaming',
+
       developApplication:
         'In-house Android and iOS app development for CPA BRO partners, and application rental service BroApps',
       teamBlock: '4+ in-house teams worldwide ',
